@@ -1,3 +1,4 @@
+
 # Automated Resume Relevance Check System - Hackathon MVP
 
 This project contains a complete hackathon-ready **AI-first** Resume Relevance Check System:
@@ -42,3 +43,4 @@ This project contains a complete hackathon-ready **AI-first** Resume Relevance C
 - The code is a **complete template**. For offline semantic similarity, `sentence-transformers` is used.
 - For large scale production, use Chroma or FAISS (helpers included).
 - LangChain integration is optional for the hackathon MVP; it's provided as an example orchestration script.
+
