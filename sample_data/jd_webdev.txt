@@ -1,0 +1,4 @@
+Job Title: Full Stack Developer
+Must Have: JavaScript, React, Node.js, HTML, CSS
+Good to Have: MongoDB, Express, Redux, REST APIs
+Responsibilities: Build web applications, maintain services

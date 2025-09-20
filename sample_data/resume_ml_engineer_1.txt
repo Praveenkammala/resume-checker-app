@@ -1,0 +1,5 @@
+Name: Ravi Kumar
+Role: ML Engineer
+Skills: Python, PyTorch, TensorFlow, ML, Deep Learning, Docker, SQL
+Experience: 1.5 years at MLStart; Project: Image classification with ResNet; Certification: DeepLearning.AI
+Education: B.Tech Computer Science

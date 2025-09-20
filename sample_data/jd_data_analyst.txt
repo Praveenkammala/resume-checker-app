@@ -1,0 +1,4 @@
+Job Title: Data Analyst
+Must Have: SQL, Excel, Tableau, Python, Data Visualization
+Good to Have: Statistics, Pandas, ETL
+Responsibilities: Build dashboards, analyze sales, support stakeholders

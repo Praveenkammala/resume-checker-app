@@ -1,0 +1,5 @@
+# Important notes about running the project
+# - Some functions require third-party packages listed in requirements.txt
+# - LLM calls require setting OPENAI_API_KEY in your environment
+# - For local semantic similarity you can use sentence-transformers
+# - For vector store: install faiss-cpu or chromadb depending on chosen backend

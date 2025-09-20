@@ -1,0 +1,16 @@
+streamlit
+fastapi
+uvicorn
+python-multipart
+pymupdf
+python-docx
+sentence-transformers
+transformers
+openai
+faiss-cpu
+chromadb
+langchain
+spacy
+scikit-learn
+nltk
+sqlalchemy

@@ -1,0 +1,5 @@
+Name: Karan Verma
+Role: Data Engineer
+Skills: SQL, Spark, Hadoop, Python, Airflow, ETL
+Experience: 2 years at DataPipe; Project: Data pipeline for analytics
+Education: B.E. Computer Science

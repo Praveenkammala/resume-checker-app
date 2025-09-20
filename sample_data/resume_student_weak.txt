@@ -1,0 +1,5 @@
+Name: Sunita Rao
+Role: Fresher
+Skills: Excel, Basic Python
+Experience: Internship in data entry; Project: None; Certification: Coursera Basics
+Education: B.Sc. Statistics

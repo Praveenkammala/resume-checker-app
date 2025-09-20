@@ -1,0 +1,5 @@
+Name: Ananya Sharma
+Role: Data Analyst
+Skills: Python, SQL, Excel, Tableau, Pandas, NumPy, Data Visualization
+Experience: 2 years internship at AnalyticsCo; Project: Sales forecasting with ARIMA; Certification: IBM Data Analyst
+Education: B.Sc. Mathematics

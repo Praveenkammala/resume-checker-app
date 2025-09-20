@@ -1,0 +1,5 @@
+Name: Priya Singh
+Role: Full Stack Developer
+Skills: JavaScript, React, Node.js, Express, MongoDB, CSS, HTML
+Experience: 3 years at WebWorks; Project: E-commerce site; Certification: Frontend Masters
+Education: B.Tech IT
