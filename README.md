@@ -61,6 +61,8 @@ To set up and run the application locally, follow these steps:
     ```
     This will open the application in your web browser, where you can upload resumes and job descriptions for evaluation.
 
+![Application Interface](sample_data/interface.png)
+
 ### Live Application
 
 You can view the live application here: [Resume Relevance Checker](https://praveenkammala-resume-checker-app-app-streamlit-lr2jdq.streamlit.app/)
