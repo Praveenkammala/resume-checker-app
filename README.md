@@ -1,50 +1,66 @@
+# Automated Resume Relevance Check System
 
-# Automated Resume Relevance Check System - Hackathon MVP
+This project contains a complete, hackathon-ready **AI-first** system for automatically checking the relevance of a resume against a job description.
 
-This project contains a complete hackathon-ready **AI-first** Resume Relevance Check System:
-- Resume & JD parsing
-- Hybrid scoring: hard (keyword) + semantic (embeddings)
-- Vector store (FAISS/Chroma) integration for scale
-- LangChain orchestration example for LLM-driven feedback
-- Streamlit demo UI (MVP)
-- SQLite storage for results
-- Sample dataset (text resumes & job descriptions)
+### Problem Statement
 
-## Structure
-- `app_streamlit.py` - Streamlit demo application
-- `resume_parser.py` - Resume text extraction (PDF/DOCX/TXT)
-- `jd_parser.py` - Job description parsing & keyword extraction
-- `relevance_score.py` - Hard + semantic scoring logic (embeddings)
-- `ai_feedback.py` - LLM prompt templates and helper for feedback
-- `vector_store.py` - Vector store helper (FAISS/Chroma)
-- `chain_orchestration.py` - LangChain orchestration example (optional)
-- `db.py` - Simple SQLite storage helper
-- `sample_data/` - Sample resumes and JDs (TXT)
-- `report.md` - Project report (editable)
-- `README.md`, `requirements.txt`
+At Innomatics Research Labs, resume evaluation is a manual, inconsistent, and time-consuming process. This leads to delays in shortlisting candidates and a high workload for the placement team. This system solves this problem by providing a fast, scalable, and consistent way to evaluate resumes, ensuring high-quality shortlists for hiring companies.
 
-## How to run (recommended)
-1. Create a Python virtual environment and install dependencies:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   ```
-2. Set any API keys (if using OpenAI):
-   ```bash
-   export OPENAI_API_KEY="sk-..."
-   ```
-3. Run the Streamlit demo:
-   ```bash
-   streamlit run app_streamlit.py
-   ```
+### Approach
 
-## Notes
-- The code is a **complete template**. For offline semantic similarity, `sentence-transformers` is used.
-- For large scale production, use Chroma or FAISS (helpers included).
-- LangChain integration is optional for the hackathon MVP; it's provided as an example orchestration script.
+The system uses a **hybrid approach** to evaluate resumes, combining both hard and soft matching techniques.
+
+* **Hard Matching:** Uses keyword checks (TF-IDF, BM25) to identify specific skills and keywords from both documents.
+* **Soft Matching:** Employs a **Large Language Model (LLM)** like Gemini to perform semantic matching and generate embeddings. This allows the system to understand skills and concepts even if the exact keywords are not present.
+
+The final **Relevance Score (0-100)** is a weighted combination of these two approaches. The system also provides a suitability verdict and personalized feedback for improvement.
+
+### Structure
+
+The project is organized into the following key files and folders:
+
+* `app_streamlit.py`: The Streamlit web application demo.
+* `resume_parser.py`: Code for extracting text from resume files (PDF/DOCX/TXT).
+* `jd_parser.py`: Logic for parsing job descriptions and extracting keywords.
+* `relevance_score.py`: The core logic for hard and semantic scoring.
+* `ai_feedback.py`: LLM prompt templates and helper functions for generating feedback.
+* `vector_store.py`: Helper script for vector store integration (e.g., FAISS/Chroma).
+* `chain_orchestration.py`: An example of using LangChain for LLM workflows.
+* `db.py`: A simple helper for SQLite database storage.
+* `sample_data/`: A folder containing sample resumes and JDs for testing.
+* `requirements.txt`: The list of Python libraries required for the project.
+
+### Installation & Usage
+
+To set up and run the application locally, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Praveenkammala/resume-checker-app.git](https://github.com/Praveenkammala/resume-checker-app.git)
+    cd resume-checker-app
+    ```
+2.  **Create and activate a virtual environment:**
+    ```bash
+    python -m venv venv
+    # On Windows
+    venv\Scripts\activate
+    # On macOS/Linux
+    source venv/bin/activate
+    ```
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Set your API key:**
+    The application requires an API key for the LLM. Set your Gemini API key as an environment variable in the same terminal session.
+    * On Windows: `set GEMINI_API_KEY="your_api_key_here"`
+    * On macOS/Linux: `export GEMINI_API_KEY="your_api_key_here"`
+5.  **Run the application:**
+    ```bash
+    streamlit run app_streamlit.py
+    ```
+    This will open the application in your web browser, where you can upload resumes and job descriptions for evaluation.
 
 ### Live Application
 
 You can view the live application here: [Resume Relevance Checker](https://praveenkammala-resume-checker-app-app-streamlit-lr2jdq.streamlit.app/)
-
