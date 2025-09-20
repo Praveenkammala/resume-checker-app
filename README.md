@@ -44,3 +44,7 @@ This project contains a complete hackathon-ready **AI-first** Resume Relevance C
 - For large scale production, use Chroma or FAISS (helpers included).
 - LangChain integration is optional for the hackathon MVP; it's provided as an example orchestration script.
 
+### Live Application
+
+You can view the live application here: [Resume Relevance Checker](https://praveenkammala-resume-checker-app-app-streamlit-lr2jdq.streamlit.app/)
+
